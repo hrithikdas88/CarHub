@@ -1,0 +1,85 @@
+.footermain {
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    margin-top: 1.25rem; /* You might need to adjust this value based on your design. */
+    border-top: 1px solid;
+    border-color: #ccc;
+    .footertop {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 1.25rem; /* You might need to adjust this value based on your design. */
+      padding-left: 1rem; /* Adjust this value based on your design for smaller screens */
+      padding-right: 4rem; /* Adjust this value based on your design for larger screens */
+      padding-top: 2.5rem; /* You might need to adjust this value based on your design. */
+      padding-bottom: 2.5rem;
+      .footertopmain {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 1.5rem;
+        .object-contain {
+          object-fit: contain; /* You might need to adjust this value based on your design. */
+        }
+        .footerpara {
+          font-size: 1rem; /* You might need to adjust this value based on your design. */
+          color: #4a5568; /* Equivalent to text-gray-700 in Tailwind CSS */
+        }
+      }
+      .footer__links {
+        flex: 1;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        margin-top: 2.5rem; /* You might need to adjust this value based on your design. */
+        gap: 5rem;
+        .footer__link {
+          display: flex;
+          flex-direction: column;
+          gap: 1.5rem; /* You might need to adjust this value based on your design. */
+          font-size: 1rem; /* You might need to adjust this value based on your design. */
+          min-width: 170px;
+          .font-bold {
+            font-weight: bold; /* You might need to adjust this value based on your design. */
+          }
+          .linkmain {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+            .linked {
+              color: #718096;
+              text-decoration: none; /* Equivalent to text-gray-500 in Tailwind CSS */
+            }
+          }
+        }
+      }
+  }
+  .footerbottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2.5rem; /* You might need to adjust this value based on your design. */
+  //   border-top: 1px solid #ccc; /* Equivalent to border-t border-gray-100 in Tailwind CSS */
+    padding-left: 1rem; /* Adjust this value based on your design for smaller screens */
+    padding-right: 4rem; /* Adjust this value based on your design for larger screens */
+    padding-top: 2.5rem; /* You might need to adjust this value based on your design. */
+    padding-bottom: 2.5rem;
+    .footercopyright {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end; /* This will be overridden by "justify-center" for smaller screens */
+      justify-content: center; /* For screens that match the "max-sm" breakpoint */
+      margin-top: 1rem; /* Adjust this value based on your design */
+      gap: 2.5rem;
+      color: #718096;
+      Link.linked{
+        text-decoration: none;
+      }
+    }
+  }
+  }

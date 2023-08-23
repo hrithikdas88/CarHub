@@ -1,0 +1,29 @@
+.searchbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    position: absolute;
+    gap: 1rem; /* Adjust gap value to match 'max-sm:gap-4' behavior for smaller screens */
+    max-width: 48rem;
+    border: none;
+    /* Adjust max-width value to match 'max-w-3xl' behavior */
+}
+
+@media (max-width: 640px) {
+    .my-flex-container {
+        flex-direction: column;
+        gap: 0.5rem; /* Adjust gap value to match 'max-sm:gap-4' behavior for smaller screens */
+    }
+
+
+    .searchbar__item{
+        flex: 1;
+    width: 100%; /* Adjust width to match 'max-sm:w-full' behavior for smaller screens */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    border: none;
+    }
+}

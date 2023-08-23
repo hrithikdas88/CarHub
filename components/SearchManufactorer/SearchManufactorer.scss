@@ -1,0 +1,61 @@
+.search-manufacturer {
+  flex: 1;
+  max-width: 100%; 
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.relative-full-width {
+  position: relative;
+  width: 100%;
+
+  .combobutton {
+    position: relative;
+    top: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+  }
+
+  .ml-4 {
+    /* margin-left: 4px;
+    margin-top: 4px; */
+    border: none;
+  }
+}
+
+.search-manufacturer__input {
+  width: 100%;
+  height: 48px;
+  padding-left: 3rem;
+  padding: 1rem; /* This line should be removed or placed before padding-left */
+  border: none; /* Add a semicolon at the end */
+  border-radius: 9999px;
+  background-color: #f2f2f2;
+  outline: none;
+  cursor: pointer;
+  font-size: 0.875rem; /* Add a semicolon at the end */
+}
+
+.search-manufacturer__option {
+  cursor: default;
+  user-select: none;
+  list-style: none;
+  padding-top: 0.5rem;
+  padding-left: 2.5rem;
+  padding-right: 1rem;
+
+  &.bg-primary-blue {
+    background-color: #3490dc;
+  }
+
+  &.text-white {
+    color: #ffffff;
+  }
+
+  &.text-gray-900 {
+    color: #000000;
+  }
+}
